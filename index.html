@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/app.style.css" />
+    <link rel="stylesheet" href="assets/homepage-arunika-v2.css" />
+    <script src="script/app.lp.js"></script>
+    <script src="script/optional.js"></script>
+  </head>
+  <body>
+    <header class="as-header" style="background: #007aff">
+      <nav class="as-navbar navbar navbar-expand-xl justify-content-lg-around">
+        <a href="https://www.niagahoster.co.id/" aria-label="Logo Niagahoster">
+          <img
+            src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/nh-logo-white-1666250984.webp"
+            height="25"
+            width="200"
+            loading="eager"
+            class="as-navbar__logo d-none d-md-block"
+            alt="logo niagahoster"
+          />
+          <img
+            src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/n-logo-1666251077.webp"
+            height="80"
+            width="80"
+            loading="eager"
+            class="as-navbar__logo d-block d-md-none"
+            alt="logo niagahoster"
+          />
+        </a>
+        <div class="as-navbar__nav--sm">
+          <a
+            href="https://panel.niagahoster.co.id/cart"
+            class="as-navbar__cart d-flex"
+            aria-label="Cart"
+          >
+            <em class="as-navbar__cart as-icon-cart">
+              <span class="as-navbar__cart-count cart-count d-none">0</span>
+            </em>
+          </a>
+          <a
+            href="https://panel.niagahoster.co.id/login"
+            class="as-navbar__button login-btn"
+            aria-label="Sign In"
+            >Login</a
+          >
+          <a
+            href="https://panel.niagahoster.co.id/client/logout"
+            class="as-navbar__button logout-btn d-none"
+            aria-label="Sign Out"
+            >Logout</a
+          >
+          <button
+            class="as-navbar-toggler collapsed"
+            type="button"
+            aria-label="menu"
+            data-toggle="collapse"
+            data-target="#mobilNavbar"
+          >
+            <span class="bar bar-one"></span>
+            <span class="bar bar-two"></span>
+            <span class="bar bar-three"></span>
+          </button>
+        </div>
+        <div
+          class="as-navbar__collapse collapse navbar-collapse justify-content-center"
+        >
+          <ul class="as-navbar__nav">
+            <li class="nav-item">
+              <div class="dropdown as-dropdown-menu">
+                <div class="as-navbar__dropdown-button">Beranda</div>
+                <div class="as-navbar__dropdown-container">
+                  <div class="as-navbar__dropdown-content">
+                    <a
+                      href="https://www.niagahoster.co.id/hosting-indonesia"
+                      onclick="trackingClickCTA('CTA Click', Homepage_UnlimitedHost_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-unlimited-hosting-1667877520.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-unlimited-hosting-1667877520.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu Unlimited Hosting"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">UNISNU JEPARA</p>
+                        <p class="as-navbar__description">Tentang Kampus</p>
+                      </div>
+                    </a>
+                    <a
+                      href="https://www.niagahoster.co.id/email-hosting"
+                      onclick="trackingClickCTA('CTA Click', Homepage_EmailHost_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-email-hosting-1667876956.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-email-hosting-1667876956.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu Email Hosting"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">Email Kampus</p>
+                        <p class="as-navbar__description">Email Kampus</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown as-dropdown-menu">
+                <div class="as-navbar__dropdown-button">Tentang</div>
+                <div class="as-navbar__dropdown-container">
+                  <div class="as-navbar__dropdown-content">
+                    <a
+                      href="https://www.niagahoster.co.id/membuat-website"
+                      onclick="trackingClickCTA('CTA Click', Homepage_JasaPembuatanWeb_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-jasa-pembuatan-website-1667877370.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-jasa-pembuatan-website-1667877370.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu Jasa Pembuatan Website"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">Teknik Informatika</p>
+                        <p class="as-navbar__description">
+                          Program Studi yang menyenangkan dan asik
+                        </p>
+                      </div>
+                    </a>
+                    <a
+                      href="https://www.niagahoster.co.id/membuat-website"
+                      onclick="trackingClickCTA('CTA Click', Homepage_JasaPembuatanWeb_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-jasa-pembuatan-website-1667877370.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-jasa-pembuatan-website-1667877370.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu Jasa Pembuatan Website"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">HMPSIF</p>
+                        <p class="as-navbar__description">
+                          Himpunan Mahasiswa Teknik Informatika
+                        </p>
+                      </div>
+                    </a>
+                    <a
+                      href="https://www.niagahoster.co.id/membuat-website"
+                      onclick="trackingClickCTA('CTA Click', Homepage_JasaPembuatanWeb_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-jasa-pembuatan-website-1667877370.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-jasa-pembuatan-website-1667877370.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu Jasa Pembuatan Website"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">Profil Pengurus</p>
+                        <p class="as-navbar__description">
+                          Profil lengkap pengurus himpunan
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown as-dropdown-menu">
+                <div class="as-navbar__dropdown-button">Program Kerja</div>
+                <div class="as-navbar__dropdown-container">
+                  <div class="as-navbar__dropdown-content">
+                    <a
+                      href="https://www.niagahoster.co.id/domain-murah"
+                      onclick="trackingClickCTA('CTA Click', Homepage_Domain_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cari-domain-1667873540.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cari-domain-1667873540.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu Cari &amp; Cek Domain"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">Informasi</p>
+                        <p class="as-navbar__description">Agenda</p>
+                      </div>
+                    </a>
+                    <a
+                      href="https://www.niagahoster.co.id/domain-id"
+                      onclick="trackingClickCTA('CTA Click', Homepage_DomainID_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-domain-id-1667873571.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-domain-id-1667873571.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu Cari Domain Indonesia"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">Cari Domain Indonesia</p>
+                        <p class="as-navbar__description">
+                          Registrasi domain Indonesia lebih mudah
+                        </p>
+                      </div>
+                    </a>
+                    <a
+                      href="https://www.niagahoster.co.id/whois"
+                      onclick="trackingClickCTA('CTA Click', Homepage_Whois_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-whois-1667873601.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-whois-1667873601.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu Cek WHOIS"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">Cek WHOIS</p>
+                        <p class="as-navbar__description">
+                          Lihat informasi kepemilikan domain Anda
+                        </p>
+                      </div>
+                    </a>
+                    <a
+                      href="https://www.niagahoster.co.id/transfer-domain"
+                      onclick="trackingClickCTA('CTA Click', Homepage_TransferDomain_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-transfer-domain-1667874224.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-transfer-domain-1667874224.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu  Transfer Domain"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">Transfer Domain</p>
+                        <p class="as-navbar__description">
+                          Migrasi domain lebih mudah dan murah
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown as-dropdown-menu">
+                <div class="as-navbar__dropdown-button">Contact Us</div>
+                <div class="as-navbar__dropdown-container">
+                  <div class="as-navbar__dropdown-content">
+                    <a
+                      href="https://www.niagahoster.co.id/cloud-vps-hosting"
+                      onclick="trackingClickCTA('CTA Click', Homepage_CloudVPS_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cloud-vps-hosting-1667873704.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cloud-vps-hosting-1667873704.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu VPS Hosting"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">
+                          VPS Hosting
+                          <span class="as-navbar__promo">Promo</span>
+                        </p>
+                        <p class="as-navbar__description">
+                          Kelola server lebih fleksibel &amp; hemat, telah
+                          dioptimasi untuk OS Linux
+                        </p>
+                      </div>
+                    </a>
+                    <a
+                      href="https://www.niagahoster.co.id/cyberpanel-vps"
+                      onclick="trackingClickCTA('CTA Click', Homepage_CyberPanelVPS_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cyberpanel-vps-1667873741.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cyberpanel-vps-1667873741.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu CyberPanel VPS Hosting"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">CyberPanel VPS Hosting</p>
+                        <p class="as-navbar__description">
+                          Tampilan panel sederhana jadikan kelola server lebih
+                          cepat, mudah dan murah
+                        </p>
+                      </div>
+                    </a>
+                    <a
+                      href="https://www.niagahoster.co.id/cpanel-vps"
+                      onclick="trackingClickCTA('CTA Click', Homepage_CPanelVPS_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cpanel-vps-1667873794.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cpanel-vps-1667873794.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu VPS cPanel"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">VPS cPanel</p>
+                        <p class="as-navbar__description">
+                          Dengan panel populer, kelola server kini semudah
+                          mengelola hosting
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown as-dropdown-menu">
+                <div class="as-navbar__dropdown-button">
+                  Promo &amp; Program
+                </div>
+                <div class="as-navbar__dropdown-container">
+                  <div class="as-navbar__dropdown-content">
+                    <a
+                      href="https://www.niagahoster.co.id/promosi"
+                      onclick="trackingClickCTA('CTA Click', Homepage_Promo_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-promo-1667873822.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-promo-1667873822.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu Promo"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">Promo</p>
+                        <p class="as-navbar__description">
+                          Temukan diskon &amp; penawaran spesial
+                        </p>
+                      </div>
+                    </a>
+                    <a
+                      href="https://www.niagahoster.co.id/afiliasi"
+                      onclick="trackingClickCTA('CTA Click', Homepage_Afiliasi_Clicked )"
+                      class="as-navbar__dropdown-link"
+                    >
+                      <img
+                        src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-afiliasi-1667889021.svg"
+                        data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-afiliasi-1667889021.svg"
+                        class="as-navbar__icon img-fluid blur-up lazyloaded"
+                        height="36"
+                        width="36"
+                        loading="eager"
+                        alt="icon menu Afiliasi"
+                      />
+                      <div class="as-navbar__content">
+                        <p class="as-navbar__title">Afiliasi</p>
+                        <p class="as-navbar__description">
+                          Tambahan komisi dari program afiliasi
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="justify-content-end as-navbar__nav--sm d-xl-flex d-none">
+          <a
+            href="https://panel.niagahoster.co.id/cart"
+            class="as-navbar__cart"
+            aria-label="Cart"
+          >
+            <em class="as-navbar__cart as-icon-cart">
+              <span class="as-navbar__cart-count cart-count d-none">0</span>
+            </em>
+          </a>
+          <a
+            href="https://panel.niagahoster.co.id/jump-member-area"
+            class="as-navbar__button account-btn d-none"
+            aria-label="Member Area"
+            >Member Area</a
+          >
+          <a
+            href="https://panel.niagahoster.co.id/client/logout"
+            class="as-navbar__button logout-btn d-none"
+            aria-label="Sign Out"
+            >Logout</a
+          >
+          <a
+            href="https://panel.niagahoster.co.id/login"
+            class="as-navbar__button login-btn"
+            aria-label="Sign In"
+            >Login</a
+          >
+        </div>
+      </nav>
+
+      <nav id="mobilNavbar" class="collapse as-navbar__collapse-mobile">
+        <div class="accordion js-accordion p-3">
+          <div class="accordion as-accordion-menu__item js-accordion__item">
+            <div
+              class="accordion-header as-accordion-menu__header js-accordion__header"
+            >
+              Website &amp; Hosting
+            </div>
+            <div
+              class="accordion-body as-accordion-menu__body js-accordion__body"
+            >
+              <div class="as-accordion-menu__content">
+                <div class="as-navbar__info">
+                  <p class="as-navbar__info-title">
+                    Website Lebih Handal dengan Hosting Terbaik
+                  </p>
+                  <p class="as-navbar__info-description">
+                    Buat website impian menjadi kenyataan dan raih pengunjung
+                    lebih banyak. Capai kesuksesan bisnis online Anda mulai
+                    dengan hosting Indonesia terbaik dari Niagahoster.
+                  </p>
+                  <a
+                    href="https://www.niagahoster.co.id/blog/cara-membuat-website-pribadi/"
+                    class="as-navbar__info-link"
+                    aria-label="show more"
+                    onclick="trackingClickCTA('CTA Click', 'PelajariSelengkapnya_WebsiteHosting' )"
+                  >
+                    Pelajari Selengkapnya
+                  </a>
+                </div>
+                <p class="as-navbar__group-title">Hosting</p>
+                <a
+                  href="https://www.niagahoster.co.id/hosting-indonesia"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_UnlimitedHost_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-unlimited-hosting-1667877520.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu Unlimited Hosting"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">Unlimited Hosting</p>
+                    <p class="as-navbar__description">
+                      Paket hosting terbaik tanpa batas
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.niagahoster.co.id/cloud-hosting"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_CloudHost_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cloud-hosting-1667876761.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu Cloud Hosting"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">Cloud Hosting</p>
+                    <p class="as-navbar__description">
+                      Server dedicated untuk traffic tinggi
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.niagahoster.co.id/transfer-hosting"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_TransferHost_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-transfer-hosting-1667873322.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu Transfer Hosting"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">Transfer Hosting</p>
+                    <p class="as-navbar__description">
+                      Migrasi hosting terbaik &amp; terpercaya
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.niagahoster.co.id/email-hosting"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_EmailHost_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-email-hosting-1667876956.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu Email Hosting"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">Email Hosting</p>
+                    <p class="as-navbar__description">
+                      Email profesional, kredibilitas meningkat
+                    </p>
+                  </div>
+                </a>
+                <p class="as-navbar__group-title">WordPress</p>
+                <a
+                  href="https://www.niagahoster.co.id/wordpress-hosting"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_WordpressHost_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-wordpress-hosting-1667873144.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu WordPress Hosting"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">WordPress Hosting</p>
+                    <p class="as-navbar__description">
+                      Hosting paling optimal untuk WordPress
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.niagahoster.co.id/membuat-website"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_JasaPembuatanWeb_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-jasa-pembuatan-website-1667877370.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu Jasa Pembuatan Website"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">Jasa Pembuatan Website</p>
+                    <p class="as-navbar__description">
+                      Layanan profesional untuk membantu pengembangan website
+                      Anda
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion as-accordion-menu__item js-accordion__item">
+            <div
+              class="accordion-header as-accordion-menu__header js-accordion__header"
+            >
+              Domain
+            </div>
+            <div
+              class="accordion-body as-accordion-menu__body js-accordion__body"
+            >
+              <div class="as-accordion-menu__content">
+                <div class="as-navbar__info">
+                  <p class="as-navbar__info-title">
+                    Beri Identitas Pada Website Anda
+                  </p>
+                  <p class="as-navbar__info-description">
+                    Biarkan pengunjung lebih mudah menemukan website Anda.
+                    Jadikan identitas dan citra bisnis lebih profesional dengan
+                    membuat nama untuk website Anda.
+                  </p>
+                  <a
+                    href="https://www.niagahoster.co.id/blog/tips-memilih-nama-domain/"
+                    class="as-navbar__info-link"
+                    aria-label="show more"
+                    onclick="trackingClickCTA('CTA Click', 'PelajariSelengkapnya_Domain' )"
+                  >
+                    Pelajari Selengkapnya
+                  </a>
+                </div>
+                <p class="as-navbar__group-title">Cari Domain</p>
+                <a
+                  href="https://www.niagahoster.co.id/domain-murah"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_Domain_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cari-domain-1667873540.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu Cari &amp; Cek Domain"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">Cari &amp; Cek Domain</p>
+                    <p class="as-navbar__description">
+                      Cek Domain untuk Website Impian
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.niagahoster.co.id/domain-id"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_DomainID_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-domain-id-1667873571.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu Cari Domain Indonesia"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">Cari Domain Indonesia</p>
+                    <p class="as-navbar__description">
+                      Registrasi domain Indonesia lebih mudah
+                    </p>
+                  </div>
+                </a>
+                <p class="as-navbar__group-title">Transfer Domain</p>
+                <a
+                  href="https://www.niagahoster.co.id/whois"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_Whois_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-whois-1667873601.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu Cek WHOIS"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">Cek WHOIS</p>
+                    <p class="as-navbar__description">
+                      Lihat informasi kepemilikan domain Anda
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.niagahoster.co.id/transfer-domain"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_TransferDomain_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-transfer-domain-1667874224.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu Transfer Domain"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">Transfer Domain</p>
+                    <p class="as-navbar__description">
+                      Migrasi domain lebih mudah dan murah
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion as-accordion-menu__item js-accordion__item">
+            <div
+              class="accordion-header as-accordion-menu__header js-accordion__header"
+            >
+              VPS
+            </div>
+            <div
+              class="accordion-body as-accordion-menu__body js-accordion__body"
+            >
+              <div class="as-accordion-menu__content">
+                <div class="as-navbar__info">
+                  <p class="as-navbar__info-title">
+                    Temukan Server Hosting Sesuai Kebutuhan Anda
+                  </p>
+                  <p class="as-navbar__info-description">
+                    Miliki server pribadi dengan performa handal. Kontrol semua
+                    konfigurasi serta sumber daya secara penuh sesuai keinginan
+                    dan kebutuhan dengan server terbaik dari Niagahoster.
+                  </p>
+                  <a
+                    href="https://www.niagahoster.co.id/blog/jenis-vps/"
+                    class="as-navbar__info-link"
+                    aria-label="show more"
+                    onclick="trackingClickCTA('CTA Click', 'PelajariSelengkapnya_VPS' )"
+                  >
+                    Pelajari Selengkapnya
+                  </a>
+                </div>
+                <a
+                  href="https://www.niagahoster.co.id/cloud-vps-hosting"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_CloudVPS_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cloud-vps-hosting-1667873704.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu VPS Hosting"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">
+                      VPS Hosting <span class="as-navbar__promo">Promo</span>
+                    </p>
+                    <p class="as-navbar__description">
+                      Kelola server lebih fleksibel &amp; hemat, telah
+                      dioptimasi untuk OS Linux
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.niagahoster.co.id/cyberpanel-vps"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_CyberPanelVPS_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cyberpanel-vps-1667873741.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu CyberPanel VPS Hosting"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">CyberPanel VPS Hosting</p>
+                    <p class="as-navbar__description">
+                      Tampilan panel sederhana jadikan kelola server lebih
+                      cepat, mudah dan murah
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.niagahoster.co.id/cpanel-vps"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_CPanelVPS_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-cpanel-vps-1667873794.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu VPS cPanel"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">VPS cPanel</p>
+                    <p class="as-navbar__description">
+                      Dengan panel populer, kelola server kini semudah mengelola
+                      hosting
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion as-accordion-menu__item js-accordion__item">
+            <div
+              class="accordion-header as-accordion-menu__header js-accordion__header"
+            >
+              Promo &amp; Program
+            </div>
+            <div
+              class="accordion-body as-accordion-menu__body js-accordion__body"
+            >
+              <div class="as-accordion-menu__content">
+                <a
+                  href="https://www.niagahoster.co.id/promosi"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_Promo_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-promo-1667873822.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu Promo"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">Promo</p>
+                    <p class="as-navbar__description">
+                      Temukan diskon &amp; penawaran spesial
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://www.niagahoster.co.id/afiliasi"
+                  onclick="trackingClickCTA('CTA Click', 'Homepage_Afiliasi_Clicked' )"
+                  class="as-navbar__dropdown-link"
+                >
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/navbar/menu-afiliasi-1667889021.svg"
+                    class="as-navbar__icon img-fluid lazyload blur-up"
+                    height="36"
+                    width="36"
+                    loading="eager"
+                    alt="icon menu Afiliasi"
+                  />
+                  <div class="as-navbar__content">
+                    <p class="as-navbar__title">Afiliasi</p>
+                    <p class="as-navbar__description">
+                      Tambahan komisi dari program afiliasi
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item account-btn text-center pt-5 d-none">
+            <a
+              href="https://panel.niagahoster.co.id/jump-member-area"
+              class="as-btn-outline--secondary btn-block mr-2"
+              aria-label="Member Area"
+              >Member Area</a
+            >
+          </div>
+          <hr class="as-navbar__hr" />
+          <div class="menu__social">
+            <div class="as-navbar__copyright">Copyright ©2022 Niagahoster</div>
+            <div class="as-navbar__social">
+              <ul class="as-navbar__list-icon">
+                <li class="as-navbar__social-icon">
+                  <a
+                    href="https://www.facebook.com/niagahoster"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="facebook niagahoster"
+                  >
+                    <em class="as-icon-facebook as-icon-white"></em>
+                  </a>
+                </li>
+                <li class="as-navbar__social-icon">
+                  <a
+                    href="https://www.instagram.com/niagahoster.id"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="instagram niagahoster"
+                  >
+                    <em class="as-icon-instagram as-icon-white"></em>
+                  </a>
+                </li>
+                <li class="as-navbar__social-icon">
+                  <a
+                    href="https://www.linkedin.com/company/niagahoster"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="linkedin niagahoster"
+                  >
+                    <em class="as-icon-linkedin as-icon-white"></em>
+                  </a>
+                </li>
+                <li class="as-navbar__social-icon">
+                  <a
+                    href="https://twitter.com/niagahoster"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="twitter niagahoster"
+                  >
+                    <em class="as-icon-twitter as-icon-white"></em>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <script>
+        var accordion = (function () {
+          var $accordion = $(".js-accordion");
+          var $accordion_header = $accordion.find(".js-accordion__header");
+          var $accordion_item = $(".js-accordion__item");
+
+          var settings = {
+            speed: 400,
+            oneOpen: false,
+          };
+
+          return {
+            init: function ($settings) {
+              $accordion_header.on("click", function () {
+                accordion.toggle($(this));
+              });
+
+              $.extend(settings, $settings);
+
+              if (
+                settings.oneOpen &&
+                $(".js-accordion__item.active").length > 1
+              ) {
+                $(".js-accordion__item.active:not(:first)").removeClass(
+                  "active"
+                );
+              }
+
+              $(".js-accordion__item.active")
+                .find("> .js-accordion__body")
+                .show();
+            },
+            toggle: function ($this) {
+              if (
+                settings.oneOpen &&
+                $this[0] !=
+                  $this
+                    .closest(".js-accordion")
+                    .find(
+                      "> .js-accordion__item.active > .js-accordion__header"
+                    )[0]
+              ) {
+                $this
+                  .closest(".js-accordion")
+                  .find("> .js-accordion__item")
+                  .removeClass("active")
+                  .find(".js-accordion__body")
+                  .slideUp();
+              }
+
+              $this.closest(".js-accordion__item").toggleClass("active");
+              $this.next().stop().slideToggle(settings.speed);
+            },
+          };
+        })();
+
+        $(document).ready(function () {
+          accordion.init({ speed: 300, oneOpen: true });
+        });
+
+        $("#mobilNavbar").on({
+          "show.bs.collapse": function () {
+            $(".as-navbar").addClass("as-navbar-blue");
+            $(".bar").addClass("bar-blue");
+            $(".as-navbar-toggler").addClass("as-navbar-toggler-blue");
+            $(".as-navbar__button").addClass("as-navbar__button-blue");
+            $(".as-icon-cart").addClass("as-icon-blue");
+            $(".as-navbar__logo").attr(
+              "src",
+              "https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-blue-small-1659527703.svg"
+            );
+
+            if (screen.width >= 768) {
+              $(".as-navbar__logo").attr(
+                "src",
+                "https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/logo-niagahoster-blue-1659527664.svg"
+              );
+            }
+          },
+          "hidden.bs.collapse": function () {
+            $(".as-navbar").removeClass("as-navbar-blue");
+            $(".bar").removeClass("bar-blue");
+            $(".as-navbar-toggler").removeClass("as-navbar-toggler-blue");
+            $(".as-navbar__button").removeClass("as-navbar__button-blue");
+            $(".as-icon-cart").removeClass("as-icon-blue");
+            $(".as-navbar__logo").attr(
+              "src",
+              "https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/n-logo-1666251077.webp"
+            );
+
+            if (screen.width >= 768) {
+              $(".as-navbar__logo").attr(
+                "src",
+                "https://niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/nh-logo-white-1666250984.webp"
+              );
+            }
+          },
+        });
+
+        if (
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          )
+        ) {
+          check_session_client();
+          if (window.addEventListener) {
+            window.addEventListener("load", getSessionCart, false);
+          } else if (window.attachEvent) {
+            window.attachEvent("onload", getSessionCart);
+          }
+        } else {
+          let sessionChecked = false;
+          $("body").mousemove(function () {
+            if (sessionChecked) {
+              return;
+            }
+
+            check_session_client();
+            getSessionCart();
+            sessionChecked = true;
+          });
+        }
+
+        function check_session_client() {
+          var ifrm = document.createElement("iframe");
+          ifrm.setAttribute(
+            "src",
+            "https://panel.niagahoster.co.id/get-session-client"
+          );
+          ifrm.style.display = "none";
+          document.body.appendChild(ifrm);
+        }
+
+        function getSessionCart() {
+          var ifrm = document.createElement("iframe");
+          ifrm.setAttribute(
+            "src",
+            "https://panel.niagahoster.co.id/get-session-cart"
+          );
+          ifrm.style.display = "none";
+          document.body.appendChild(ifrm);
+        }
+
+        var loginStatus;
+
+        function ifLogin() {
+          $(".login-btn").addClass("d-none");
+          $(".account-btn").removeClass("d-none");
+          $(".logout-btn").removeClass("d-none");
+          loginStatus = true;
+        }
+
+        function ifNotLogin() {
+          $(".login-btn").removeClass("d-none");
+          $(".account-btn").addClass("d-none");
+          $(".logout-btn").addClass("d-none");
+          $(".sticky-signup.toast").toast("show");
+          loginStatus = false;
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+            "message",
+            function (e) {
+              var origin = "https://panel.niagahoster.co.id/";
+              if (e.origin === origin.replace(/\/$/, "")) {
+                var task = e.data["task"];
+                switch (task) {
+                  case "login":
+                    ifLogin();
+                    break;
+                  case "not_login":
+                    ifNotLogin();
+                    break;
+                }
+
+                if (e.data.count !== undefined) {
+                  if (e.data.count > 0) {
+                    $(".cart-count").text(e.data.count);
+                    $(".cart-count").removeClass("d-none");
+                  } else {
+                    $(".cart-count").addClass("d-none");
+                  }
+                }
+              }
+            },
+            false
+          );
+        }
+
+        function showSupportWidget() {
+          if (
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+              navigator.userAgent
+            )
+          ) {
+            return;
+          }
+
+          if (shouldLauncherHidden()) {
+            Intercom("show");
+          } else {
+            openKb();
+          }
+        }
+
+        $(document).ready(function () {
+          const getTrackingPageInfo = function () {
+            let urlPath = window.location.pathname.split("/");
+            if (!urlPath.length >= 2) {
+              return;
+            }
+            if (!urlPath[1]) {
+              return "HomePage";
+            }
+            let pathName = urlPath[1].replace(
+              /(^\w{1})|(\-{1}\w{1})/g,
+              (match) => match.toUpperCase()
+            );
+            pathName = pathName.split("-");
+            return pathName.length > 1 ? pathName.join("") : pathName;
+          };
+
+          $("button.owl-dot").attr("aria-label", "owl button");
+
+          $(".sticky-signup").on({
+            "show.bs.toast": function () {
+              $(".nh-navbar").addClass("nh-navbar--sticky-signup");
+            },
+            "hidden.bs.toast": function () {
+              $(".nh-navbar").removeClass("nh-navbar--sticky-signup");
+
+              trackingClickCTA(
+                "Sticky Signup",
+                getTrackingPageInfo() + "_XButton_Clicked"
+              );
+            },
+          });
+
+          $(".sticky-signup__button").on("click", function () {
+            sessionStorage.setItem("sticky_signup", true);
+
+            trackingClickCTA(
+              "Sticky Signup",
+              getTrackingPageInfo() + "_Daftar_Clicked"
+            );
+          });
+
+          $('a[href="https://panel.niagahoster.co.id/login"]').on(
+            "click touch",
+            function (e) {
+              e.preventDefault();
+
+              trackingClickCTA(
+                "Navbar Menu",
+                getTrackingPageInfo() + "_Login_Clicked"
+              );
+
+              if (sessionStorage.getItem("sticky_signup")) {
+                sessionStorage.removeItem("sticky_signup");
+              }
+              $("#modalLogin").modal("show");
+            }
+          );
+          if (searchParams.get("2fa")) {
+            $("#modalLogin").data("source", "sosmed_login").modal("show");
+          }
+        });
+      </script>
+      <section class="as-hero" style="background: #007aff">
+        <div class="container">
+          <div class="row as-hero__wrapper">
+            <div class="col-lg-6 as-hero__content">
+              <h1 class="as-hero__title">
+                Hosting No.1 Siap Wujudkan Website Impian!
+              </h1>
+              <p class="as-hero__description">
+                Penawaran terbaik unlimited web hosting dengan fitur terlengkap,
+                harga terjangkau, serta gratis domain &amp; SSL untuk Anda.
+                Jangan lewatkan!
+              </p>
+              <div class="as-counter">
+                <div class="as-counter__wrapper">
+                  <p id="days" class="as-counter__item">00</p>
+                  <p class="as-counter__time">Hari</p>
+                </div>
+                <div class="as-counter__colon"></div>
+                <div class="as-counter__wrapper">
+                  <p id="hours" class="as-counter__item">11</p>
+                  <p class="as-counter__time">Jam</p>
+                </div>
+                <div class="as-counter__colon"></div>
+                <div class="as-counter__wrapper">
+                  <p id="minutes" class="as-counter__item">56</p>
+                  <p class="as-counter__time">Menit</p>
+                </div>
+                <div class="as-counter__colon"></div>
+                <div class="as-counter__wrapper">
+                  <p id="seconds" class="as-counter__item">30</p>
+                  <p class="as-counter__time">Detik</p>
+                </div>
+              </div>
+              <script>
+                var dt = "";
+                var now = new Date();
+                var dateNows =
+                  now.getFullYear() +
+                  "-" +
+                  (now.getMonth() + 1) +
+                  "-" +
+                  now.getDate() +
+                  " 23:59:00";
+
+                if (dt) {
+                  dt = "";
+                } else {
+                  dt = `${dateNows}`;
+                }
+
+                var dateNow = now.toLocaleDateString("en-us", {
+                  timeZone: "Asia/Jakarta",
+                });
+                dateNow = dateNow.split("/");
+                var dateString =
+                  dateNow[2] +
+                  "/" +
+                  dateNow[0] +
+                  "/" +
+                  dateNow[1] +
+                  " " +
+                  dt.split(" ")[1];
+                var countDownDate = new Date(dateString);
+                countDownDate.setMinutes(countDownDate.getMinutes() + 1);
+
+                var x = setInterval(function () {
+                  var now = new Date().getTime();
+                  var distance = countDownDate.getTime() - now;
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor(
+                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                  );
+                  var minutes = Math.floor(
+                    (distance % (1000 * 60 * 60)) / (1000 * 60)
+                  );
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                  if (days <= 0) {
+                    days = "00";
+                  } else if (days.length == 1) {
+                    days = `0${days}`;
+                  }
+
+                  if (hours <= 0) {
+                    hours = "00";
+                  } else if (String(hours).length == 1) {
+                    hours = `0${hours}`;
+                  }
+
+                  if (minutes <= 0) {
+                    minutes = "00";
+                  } else if (String(minutes).length == 1) {
+                    minutes = `0${minutes}`;
+                  }
+
+                  if (seconds <= 0) {
+                    seconds = "00";
+                  } else if (String(seconds).length == 1) {
+                    seconds = `0${seconds}`;
+                  }
+
+                  $("#days").html(days);
+                  $("#hours").html(hours);
+                  $("#minutes").html(minutes);
+                  $("#seconds").html(seconds);
+
+                  if (distance <= 0 || isNaN(distance)) {
+                    clearInterval(x);
+                    $(".as-counter").css("display", "none");
+                    $(".as-hero__button").css("margin-top", "0");
+                  }
+                }, 1000);
+              </script>
+              <button
+                class="as-hero__button"
+                onclick="trackingClickCTA('CTA Click', 'Homepage_Pilihsekarang_Clicked')"
+              >
+                Lihat Penawaran
+              </button>
+            </div>
+            <div class="col-lg-6 as-hero__images">
+              <picture>
+                <source
+                  srcset="
+                    https://niagaspace.sgp1.cdn.digitaloceanspaces.com/bb-uploads/configs/marketing-tool-marketing-tool-hostinghome-1662430561-1665570437.webp
+                  "
+                  data-srcset="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/bb-uploads/configs/marketing-tool-marketing-tool-hostinghome-1662430561-1665570437.webp"
+                  media="(max-width: 799px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    https://niagaspace.sgp1.cdn.digitaloceanspaces.com/bb-uploads/configs/marketing-tool-marketing-tool-hostinghome-1662430561-1665570437.webp
+                  "
+                  data-srcset="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/bb-uploads/configs/marketing-tool-marketing-tool-hostinghome-1662430561-1665570437.webp"
+                  media="(min-width: 800px)"
+                  type="image/webp"
+                />
+                <img
+                  src="https://niagaspace.sgp1.cdn.digitaloceanspaces.com/bb-uploads/configs/marketing-tool-marketing-tool-hostinghome-1662430561-1665570437.webp"
+                  width="400"
+                  height="400"
+                  class="blur-up lazyloaded"
+                  loading="eager"
+                  decoding="async"
+                  alt="Hosting No.1 Siap Wujudkan Website Impian!"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
